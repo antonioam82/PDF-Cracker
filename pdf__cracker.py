@@ -6,12 +6,12 @@ class App:
     def __init__(self):
         self.root = Tk()
         self.root.title('PDF CRACKER')
-        self.root.geometry('700x400')
+        self.root.geometry('779x480')
 
         self.currentDir = StringVar()
         self.currentDir.set(os.getcwd())
 
-        self.entry = Entry(self.root,textvariable=self.currentDir,width=116)
+        self.entry = Entry(self.root,textvariable=self.currentDir,width=129)
         self.entry.place(x=0,y=0)
 
         self.root.mainloop()
