@@ -1,6 +1,10 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 from tkinter import *
 from tkinter import filedialog, messagebox
+import tkinter.scrolledtext as scrolledtext
 import os
+
 
 class App:
     def __init__(self):
@@ -13,6 +17,8 @@ class App:
 
         self.entry = Entry(self.root,textvariable=self.currentDir,width=129)
         self.entry.place(x=0,y=0)
+        self.display = scrolledtext.ScrolledText(self.root,width=64,height=20)
+        self.display.place(x=10,y=25)
 
         self.root.mainloop()
 
