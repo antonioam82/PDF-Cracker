@@ -14,13 +14,18 @@ class App:
 
         self.currentDir = StringVar()
         self.currentDir.set(os.getcwd())
+        self.file_name = StringVar()
 
         self.entry = Entry(self.root,textvariable=self.currentDir,width=129)
         self.entry.place(x=0,y=0)
         self.display = scrolledtext.ScrolledText(self.root,width=64,height=20)
         self.display.place(x=10,y=25)
+        Button(self.root,text="SEARCH",width=10).place(x=10,y=353)
+        self.nameEntry = Entry(self.root,textvariable=self.file_name,width=39,font=('Arial',14))
+        self.nameEntry.place(x=94,y=353)
 
         self.root.mainloop()
 
 if __name__=='__main__':
     App()
+
