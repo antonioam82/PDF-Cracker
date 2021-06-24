@@ -16,6 +16,10 @@ class App:
         self.currentDir.set(os.getcwd())
         self.file_name = StringVar()
 
+        self.canvas = Canvas(self.root,width=217,height=355)
+        self.canvas.place(x=550,y=25)
+        self.combi = Listbox(self.canvas,width=36,height=22,bg="black")
+        self.combi.pack()
         self.entry = Entry(self.root,textvariable=self.currentDir,width=129)
         self.entry.place(x=0,y=0)
         self.display = scrolledtext.ScrolledText(self.root,width=64,height=20)
@@ -28,4 +32,3 @@ class App:
 
 if __name__=='__main__':
     App()
-
