@@ -27,8 +27,10 @@ class App:
         Button(self.root,text="SEARCH",width=10).place(x=10,y=353)
         self.nameEntry = Entry(self.root,textvariable=self.file_name,width=39,font=('Arial',14))
         self.nameEntry.place(x=94,y=353)
+        Button(self.root,text='START',width=73).place(x=10,y=390)
 
         self.root.mainloop()
 
 if __name__=='__main__':
     App()
+
