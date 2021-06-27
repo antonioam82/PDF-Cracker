@@ -9,6 +9,7 @@ import os
 class App:
     def __init__(self):
         self.root = Pmw.initialise(fontScheme = 'pmw1')
+        self.root.title('PDF CRACKER')
         self.root.geometry('779x480')
 
         self.root.mainloop()
