@@ -16,6 +16,7 @@ class App:
         self.main_display.place(x=10,y=25)
         self.second_display = Pmw.ScrolledText(self.root,text_width=36,text_height=23,vscrollmode='dynamic')
         self.second_display.place(x=599,y=25)
+        Button(self.root,text="SEARCH",width=10).place(x=10,y=393)
 
         self.root.mainloop()
 
